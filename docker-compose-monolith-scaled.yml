@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "8000:80"
+    volumes:
+      - ./nginx-mon.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - monolith1
+      - monolith2
+      - monolith3
+
+  monolith1:
+    build:
+      context: ./Monolith
+      dockerfile: Dockerfile
+    container_name: monolith1
+    environment:
+      - SERVER_PORT=8001
+      - PORT=8001
+
+  monolith2:
+    build:
+      context: ./Monolith
+      dockerfile: Dockerfile
+    container_name: monolith2
+    environment:
+      - SERVER_PORT=8002
+      - PORT=8002
+
+  monolith3:
+    build:
+      context: ./Monolith
+      dockerfile: Dockerfile
+    container_name: monolith3
+    environment:
+      - SERVER_PORT=8003
+      - PORT=8003

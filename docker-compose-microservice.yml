@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  microservice1:
+    build:
+      context: ./Microservice1
+      dockerfile: Dockerfile
+    container_name: microservice1
+    ports:
+      - "8001:8001"
+    environment:
+      - SERVER_PORT=8001
+      - PORT=8001
+      - HOST1=http://microservice2:8011
+    depends_on:
+      - microservice2
+
+  microservice2:
+    build:
+      context: ./Microservice2
+      dockerfile: Dockerfile
+    container_name: microservice2
+    ports:
+      - "8011:8011"
+    environment:
+      - SERVER_PORT=8011
+      - PORT=8011
+      - HOST1=http://microservice3:8021
+    depends_on:
+      - microservice3
+
+  microservice3:
+    build:
+      context: ./Microservice3
+      dockerfile: Dockerfile
+    container_name: microservice3
+    ports:
+      - "8021:8021"
+    environment:
+      - SERVER_PORT=8021
+      - PORT=8021
