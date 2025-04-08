@@ -12,6 +12,13 @@ services:
       - SERVER_PORT=8001
       - PORT=8001
       - HOST1=http://microservice2:8011
+      - HOST_NUM=1
+
+    deploy:
+      resources:
+        limits:
+          memory: 1536M
+          cpus: "1.5"
     depends_on:
       - microservice2
 
@@ -26,6 +33,12 @@ services:
       - SERVER_PORT=8011
       - PORT=8011
       - HOST1=http://microservice3:8021
+      - HOST_NUM=1
+    deploy:
+      resources:
+        limits:
+          memory: 1536M
+          cpus: "1.5"
     depends_on:
       - microservice3
 
@@ -39,3 +52,8 @@ services:
     environment:
       - SERVER_PORT=8021
       - PORT=8021
+    deploy:
+      resources:
+        limits:
+          memory: 1536M
+          cpus: "1.5"

@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Random;
+
 @RestController
 public class AppController {
 
@@ -29,6 +31,15 @@ public class AppController {
                 cpuLoad3,
                 memoryLoad3
         );
-        return new Response();
+        Random random = new Random();
+
+        Response response = new Response(
+                random.nextInt(1000), // Random ID
+                "John" + random.nextInt(100), // Randomized first name
+                "Doe" + random.nextInt(100),  // Randomized last name
+                "user" + random.nextInt(100) + "@example.com", // Random email
+                random.nextInt(80) + 18 // Random age between 18-97
+        );
+        return response;
     }
 }

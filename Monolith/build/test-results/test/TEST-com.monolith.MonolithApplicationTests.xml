@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.monolith.MonolithApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-23T12:59:26" hostname="C11951" time="0.968">
+<testsuite name="com.monolith.MonolithApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-13T12:27:04" hostname="C11951" time="0.816">
   <properties/>
-  <testcase name="contextLoads()" classname="com.monolith.MonolithApplicationTests" time="0.968"/>
-  <system-out><![CDATA[13:59:24.107 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.monolith.MonolithApplicationTests]: MonolithApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:59:24.247 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.monolith.MonolithApplication for test class com.monolith.MonolithApplicationTests
+  <testcase name="contextLoads()" classname="com.monolith.MonolithApplicationTests" time="0.816"/>
+  <system-out><![CDATA[13:27:03.040 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.monolith.MonolithApplicationTests]: MonolithApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:27:03.162 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.monolith.MonolithApplication for test class com.monolith.MonolithApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,9 +14,9 @@
 
  :: Spring Boot ::                (v3.4.3)
 
-2025-02-23T13:59:24.785+01:00  INFO 6607 --- [Monolith] [    Test worker] com.monolith.MonolithApplicationTests    : Starting MonolithApplicationTests using Java 17.0.14 with PID 6607 (started by pkluska in /Users/pkluska/IdeaProjects/PerformanceAndScalabilityTest/Monolith)
-2025-02-23T13:59:24.787+01:00  INFO 6607 --- [Monolith] [    Test worker] com.monolith.MonolithApplicationTests    : No active profile set, falling back to 1 default profile: "default"
-2025-02-23T13:59:26.243+01:00  INFO 6607 --- [Monolith] [    Test worker] com.monolith.MonolithApplicationTests    : Started MonolithApplicationTests in 1.768 seconds (process running for 3.293)
+2025-03-13T13:27:03.612+01:00  INFO 91550 --- [Monolith] [    Test worker] com.monolith.MonolithApplicationTests    : Starting MonolithApplicationTests using Java 17.0.14 with PID 91550 (started by pkluska in /Users/pkluska/IdeaProjects/PerformanceAndScalabilityTest/Monolith)
+2025-03-13T13:27:03.614+01:00  INFO 91550 --- [Monolith] [    Test worker] com.monolith.MonolithApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-03-13T13:27:04.666+01:00  INFO 91550 --- [Monolith] [    Test worker] com.monolith.MonolithApplicationTests    : Started MonolithApplicationTests in 1.339 seconds (process running for 2.881)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

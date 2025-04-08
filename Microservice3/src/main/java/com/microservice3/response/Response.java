@@ -1,22 +1,60 @@
 package com.microservice3.response;
 
 public class Response {
-    private String latency;
-    private String processTime;
+    private int id;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private int age;
 
-    public String getLatency() {
-        return latency;
+    public Response() {
     }
 
-    public void setLatency(String latency) {
-        this.latency = latency;
+    public Response(int id, String firstName, String lastName, String email, int age) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.age = age;
     }
 
-    public String getProcessTime() {
-        return processTime;
+    public int getId() {
+        return id;
     }
 
-    public void setProcessTime(String processTime) {
-        this.processTime = processTime;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

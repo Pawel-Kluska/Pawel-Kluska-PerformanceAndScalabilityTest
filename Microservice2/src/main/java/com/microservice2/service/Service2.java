@@ -12,15 +12,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Service
 public class Service2 {
 
-    @Value("${host1}")
-    private String host1;
+    @Value("${hosts}")
+    private String[] hosts;
 
-    @Value("${host2}")
-    private String host2;
-
-    @Value("${host3}")
-    private String host3;
-
+    @Value("${hostsNumber}")
+    private int hostsNumber;
     private final RestTemplate restTemplate = new RestTemplate();
     private final AtomicInteger requestCounter = new AtomicInteger(0);
 
@@ -46,10 +42,7 @@ public class Service2 {
     }
 
     private String getNextHost() {
-        if (host2.equals("invalid") || host3.equals("invalid"))
-            return host1;
-        String[] hosts = {host1, host2, host3};
-        int index = requestCounter.getAndIncrement() % hosts.length;
+        int index = requestCounter.getAndIncrement() % hostsNumber;
         return hosts[index];
     }
 

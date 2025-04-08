@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor
+    container_name: cadvisor
+    volumes:
+      - /:/rootfs:ro            # Mount root filesystem for cAdvisor to monitor
+      - /sys:/sys:ro            # Mount /sys for system-level stats
+      - /var/lib/docker/:/var/lib/docker:ro  # Mount Docker images, volumes, and containers
+      - /var/run/docker.sock:/var/run/docker.sock:rw  # Mount Docker socket to cAdvisor container
+    ports:
+      - "7070:8080"             # Expose cAdvisor web UI on port 8080
+    restart: always             # Always restart cAdvisor if it stops
+    privileged: true            # Allow cAdvisor to gather system-level information

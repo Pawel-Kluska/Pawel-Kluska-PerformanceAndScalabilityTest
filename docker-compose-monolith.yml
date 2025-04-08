@@ -11,3 +11,8 @@ services:
     environment:
       - SERVER_PORT=8001
       - PORT=8001
+    deploy:
+      resources:
+        limits:
+          memory: 4608M
+          cpus: "4.5"
