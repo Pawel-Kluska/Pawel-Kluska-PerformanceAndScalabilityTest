@@ -6,21 +6,22 @@ sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
 
 git clone https://github.com/Pawel-Kluska/Pawel-Kluska-PerformanceAndScalabilityTest.git
 cd Pawel-Kluska-PerformanceAndScalabilityTest/Microservice2
-sudo apt-get install openjdk-17-jdk
+sudo apt-get install openjdk-17-jdk -y
 sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
 
 git clone https://github.com/Pawel-Kluska/Pawel-Kluska-PerformanceAndScalabilityTest.git
 cd Pawel-Kluska-PerformanceAndScalabilityTest/Microservice3
-sudo apt-get install openjdk-17-jdk
+sudo apt-get install openjdk-17-jdk -y
 sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
 
 git pull origin main
+sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
 
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@ec2-34-201-66-242.compute-1.amazonaws.com
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@34.207.161.129
 
-
-
+nginx
+http://34.201.66.242/
 
 
 Microservice1

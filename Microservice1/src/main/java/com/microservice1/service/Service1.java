@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
@@ -50,7 +51,7 @@ public class Service1 {
     }
 
     private String getNextHost() {
-        int index = requestCounter.getAndIncrement() % hostsNumber;
+        int index = ThreadLocalRandom.current().nextInt(hostsNumber);
         return hosts[index];
     }
 }
