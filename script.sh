@@ -1,6 +1,6 @@
 git clone https://github.com/Pawel-Kluska/Pawel-Kluska-PerformanceAndScalabilityTest.git
 cd Pawel-Kluska-PerformanceAndScalabilityTest/Microservice1
-sudo apt-get install openjdk-17-jdk
+sudo apt-get install openjdk-17-jdk -y
 sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
 
 
@@ -14,7 +14,7 @@ cd Pawel-Kluska-PerformanceAndScalabilityTest/Microservice3
 sudo apt-get install openjdk-17-jdk
 sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
 
-
+git pull origin main
 
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@ec2-34-201-66-242.compute-1.amazonaws.com
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@34.207.161.129
@@ -34,16 +34,22 @@ Microservice1
 3.92.134.76
 34.207.161.129
 
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@18.208.134.56
+
+
+
 Microservice2
 54.146.190.80
 54.197.11.161
-52.207.254.232
+44.203.113.240
 44.211.38.92
 54.208.165.162
 34.203.40.253
 34.238.232.133
 54.164.198.223
 18.208.134.56
+
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@35.173.125.102
 
 Microservice3
 54.234.29.183
