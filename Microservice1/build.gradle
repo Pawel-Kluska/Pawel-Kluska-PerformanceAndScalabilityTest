@@ -28,5 +28,5 @@ tasks.named('test') {
 }
 
 tasks.withType(JavaExec).configureEach {
-    jvmArgs = ['-Xms1200m', '-Xmx1200m']
+    jvmArgs = ['-Xms900m', '-Xmx900m']
 }
