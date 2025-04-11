@@ -50,7 +50,7 @@ ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.205.6.32
 
 
 Microservice2
-13.218.223.138
+54.83.69.166
 54.175.127.43
 54.211.34.57
 3.80.64.25
@@ -60,7 +60,7 @@ Microservice2
 3.91.98.145
 13.218.222.113
 
-ssh -i "aws_key_apir_magisterka.pem" ubuntu@13.218.223.138
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.83.69.166
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.175.127.43
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.211.34.57
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@3.80.64.25
