@@ -2,7 +2,7 @@
 git clone https://github.com/Pawel-Kluska/Pawel-Kluska-PerformanceAndScalabilityTest.git
 sudo apt-get install openjdk-17-jdk -y
 cd Pawel-Kluska-PerformanceAndScalabilityTest/Microservice1
-sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
+JAVA_OPTS="-Xmx700M -Xms512M" sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
 
 
 git clone https://github.com/Pawel-Kluska/Pawel-Kluska-PerformanceAndScalabilityTest.git
