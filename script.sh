@@ -119,3 +119,9 @@ ssh -i "aws_key_apir_magisterka.pem" ubuntu@184.73.34.227
 
 
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.236.22.71
+
+
+git clone https://github.com/Pawel-Kluska/Pawel-Kluska-PerformanceAndScalabilityTest.git
+sudo apt-get install openjdk-17-jdk -y
+cd Pawel-Kluska-PerformanceAndScalabilityTest/Monolith
+sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
