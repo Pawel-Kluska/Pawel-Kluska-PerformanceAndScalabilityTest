@@ -26,3 +26,7 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+tasks.withType(JavaExec).configureEach {
+    jvmArgs = ['-Xms2048m', '-Xmx2048m']
+}

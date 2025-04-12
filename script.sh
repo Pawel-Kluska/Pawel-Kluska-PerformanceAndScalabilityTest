@@ -116,3 +116,6 @@ ssh -i "aws_key_apir_magisterka.pem" ubuntu@18.208.211.133
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@98.84.151.114
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.84.36.42
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@184.73.34.227
+
+
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.236.22.71
