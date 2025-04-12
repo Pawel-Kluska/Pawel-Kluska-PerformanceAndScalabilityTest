@@ -21,7 +21,7 @@ sudo ./gradlew bootRun --args='--spring.profiles.active=cloud'
 
 
 
-ssh -i "aws_key_apir_magisterka.pem" ubuntu@ec2-34-201-66-242.compute-1.amazonaws.com
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@3.82.51.92
 
 nginx
 http://3.82.51.92
@@ -36,7 +36,7 @@ Microservice1
 54.91.94.84
 3.90.18.8
 44.223.65.31
-54.205.6.32
+54.234.100.228
 
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@98.81.58.221
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.172.161.18
@@ -46,7 +46,7 @@ ssh -i "aws_key_apir_magisterka.pem" ubuntu@18.234.88.126
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.91.94.84
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@3.90.18.8
 ssh -i "aws_key_apir_magisterka.pem" ubuntu@44.223.65.31
-ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.205.6.32
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.234.100.228
 
 
 Microservice2
@@ -96,3 +96,23 @@ ssh -i "aws_key_apir_magisterka.pem" ubuntu@184.72.168.255
 http://3.95.37.182,http://54.173.26.17,http://18.212.240.179,http://3.81.235.87,http://52.207.230.227,http://3.85.37.44,http://54.144.95.31,http://18.209.49.224,http://184.72.168.255
 
 
+Monolith
+54.92.218.126
+50.19.32.143
+54.242.107.145
+50.17.93.129
+98.81.228.47
+18.208.211.133
+98.84.151.114
+54.84.36.42
+184.73.34.227
+
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.92.218.126
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@50.19.32.143
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.242.107.145
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@50.17.93.129
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@98.81.228.47
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@18.208.211.133
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@98.84.151.114
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@54.84.36.42
+ssh -i "aws_key_apir_magisterka.pem" ubuntu@184.73.34.227
